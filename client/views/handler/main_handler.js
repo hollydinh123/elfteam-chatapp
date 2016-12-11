@@ -101,9 +101,6 @@ send_btn.addEventListener('click', (ev) => {
 });
 
 ipc.on('send-msg-success', (ev, dat) => {
-  if (prog) {
-    prog.style.display = 'none';
-  }
   if (dat) {
     create_li_msg(dat, true);
   }
